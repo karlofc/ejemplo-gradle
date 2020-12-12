@@ -1,4 +1,3 @@
-# ejemplo-gradle
 # Getting Started
 
 ## Windows
