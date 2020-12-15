@@ -12,6 +12,9 @@ def call(){
     stage('test'){
         bat 'mvnw.cmd clean test -e'
     }
+    stage('Jar') {
+        bat 'mvnw.cmd clean package -e'
+    }
     stage('sonar'){
         def scannerHome = tool 'sonar-scanner';
         withSonarQubeEnv('sonar') {
