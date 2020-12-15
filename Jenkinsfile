@@ -5,7 +5,7 @@ pipeline {
         stage('Pipeline') {
             steps {
 				script{
-					def ejecucion = load 'gradle.groovy'
+					def ejecucion = load 'maven.groovy'
 					ejecucion.call()
 				}
             }
