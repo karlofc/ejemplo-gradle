@@ -16,6 +16,7 @@
 * Background: start gradle bootRun
 
 ### Testing Application
+* curl http://localhost:8082/rest/mscovid/estadoMundial
 * Abrir navegador: http://localhost:8082/rest/mscovid/estadoMundial
 
 ## Linux
