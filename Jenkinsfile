@@ -5,7 +5,8 @@ pipeline {
         stage('Pipeline') {
             steps {
 				script{
-					def ejecucion = (params.CHOICE == 'maven') ? load 'maven.groovy' : load 'gradle.groovy'
+					def build = (params.CHOICE == 'maven') ? 'maven.groovy' : 'gradle.groovy'
+					def ejecucion = load build
 					ejecucion.call()
 				}
             }
