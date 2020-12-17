@@ -18,10 +18,10 @@ pipeline {
     }
 	post {
         success {
-            slackSend channel: 'dipdevopsusach2020', color: 'good', message: 'Build Success: [Carlo Figueroa][${env.JOB_NAME}][${params.CHOICE}] Ejecución exitosa."', tokenCredentialId: 'slack-token-diplomado'
+            slackSend channel: 'dipdevopsusach2020', color: 'good', message: 'Build Success: [Carlo Figueroa][${env.JOB_NAME}][${params.CHOICE}] Ejecución exitosa.', tokenCredentialId: 'slack-token-diplomado'
         }
         failure {
-            slackSend channel: 'dipdevopsusach2020', color: 'danger', message: 'Build Failure: [Carlo Figueroa][${env.JOB_NAME}][${params.CHOICE}] Ejecución fallida en stage []."', tokenCredentialId: 'slack-token-diplomado'
+            slackSend channel: 'dipdevopsusach2020', color: 'danger', message: 'Build Failure: [Carlo Figueroa][${env.JOB_NAME}][${params.CHOICE}] Ejecución fallida en stage [].', tokenCredentialId: 'slack-token-diplomado'
         }
     }
 }
